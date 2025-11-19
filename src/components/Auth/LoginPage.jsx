@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/app.css';
+import '../../styles/style.css';
 import axios from 'axios';
 import API_URL from '../../config';
 
@@ -151,7 +151,6 @@ const LoginPage = ({ setUser, setCurrentPage }) => {
     </div>
   );
 };
-
 export default LoginPage;
 
 export const register = async (req, res) => {
