@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/style.css';
+import '../../styles/app.css';
 import axios from 'axios';
 import API_URL from '../../config';
 
@@ -44,7 +44,7 @@ const LoginPage = ({ setUser, setCurrentPage }) => {
           setUser(response.data.data);
           setCurrentPage('dashboard');
         } else {
-         
+          // registration successful — switch to login view instead of auto-login
           alert('Registration successful. Please login to continue.');
           setIsLogin(true);
           resetFields();
@@ -70,7 +70,7 @@ const LoginPage = ({ setUser, setCurrentPage }) => {
                 <input
                   type="text"
                   className="lt-input"
-                  placeholder="yourusername"
+                  placeholder="Username"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                 />
