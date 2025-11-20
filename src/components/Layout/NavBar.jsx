@@ -14,7 +14,7 @@ const NavBar = ({ user, setUser, currentPage, setCurrentPage, setTransactions })
       console.error('Logout failed:', err);
     }
 
-   
+    
     setUser(null);
     setTransactions([]);
     setCurrentPage('login');
@@ -69,3 +69,4 @@ const NavBar = ({ user, setUser, currentPage, setCurrentPage, setTransactions })
 };
 
 export default NavBar;
+

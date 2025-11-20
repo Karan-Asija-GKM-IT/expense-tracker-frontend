@@ -75,11 +75,11 @@ const DashboardPage = ({
     return () => {
       mounted = false;
     };
-  }, []);
+  }, []); // run once
 
   return (
     <div>
-      {/*  */}
+      {/* 🚀 Pass setTransactions to NavBar */}
       <NavBar
         user={user}
         setUser={setUser}
