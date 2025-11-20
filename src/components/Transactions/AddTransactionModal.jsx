@@ -238,10 +238,16 @@ const AddTransactionModal = ({
         const value = e.target.value;
         // Allow only digits (0–9) and .
         if (/^\d*\.?\d*$/.test(value)) {
+          const maxAmount = 100000;
+          const numericValue = parseFloat(value) || 0;
+
+        if (numericValue > maxAmount) {
+          return;   // simply don't update the state
+        }
           setForm({ ...form, amount: value });
         }
       }}
-          placeholder="0"
+          placeholder="0.00"
       />
   </div>
 
