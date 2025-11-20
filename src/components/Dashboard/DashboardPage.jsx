@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import NavBar from '../Layout/NavBar';
-import SummaryCards from './SummaryCards';
-import MonthComparison from './MonthComparison';
-import RecentTransactions from './RecentTransactions';
+import NavBar from '../Layout/NavBar.jsx';
+import SummaryCards from './SummaryCards.jsx';
+import MonthComparison from './MonthlyComparison.jsx';
+import RecentTransactions from './RecentTransactions.jsx';
 import '../../styles/style.css';
 
 const DashboardPage = ({

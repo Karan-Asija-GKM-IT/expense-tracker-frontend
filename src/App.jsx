@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import LoginPage from './components/Auth/LoginPage';
+import DashboardPage from './components/Dashboard/DashboardPage.jsx';
+import TransactionsPage from './components/Transactions/TransactionsPage.jsx';
+import ImportExportPage from './components/Export/ImportExportPage.jsx';
 import './App.css';
 import './styles/style.css';
 

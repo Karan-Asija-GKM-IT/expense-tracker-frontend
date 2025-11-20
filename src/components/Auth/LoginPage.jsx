@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/style.css';
 import axios from 'axios';
-import API_URL from '../../config';
+import API_URL from '../../config.js';
 
 const LoginPage = ({ setUser, setCurrentPage }) => {
   const [isLogin, setIsLogin] = useState(true);
