@@ -3,7 +3,7 @@ import NavBar from '../Layout/NavBar';
 import SummaryCards from './SummaryCards';
 import MonthComparison from './MonthComparison';
 import RecentTransactions from './RecentTransactions';
-import '../../styles/app.css';
+import '../../styles/style.css';
 
 const DashboardPage = ({
   user,

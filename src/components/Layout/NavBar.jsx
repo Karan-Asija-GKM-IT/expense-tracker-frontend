@@ -1,6 +1,6 @@
 import React from 'react';
 import { DollarSign, LogOut } from 'lucide-react';
-import '../../styles/app.css';
+import '../../styles/style.css';
 
 const NavBar = ({ user, setUser, currentPage, setCurrentPage, setTransactions }) => {
   const handleLogout = async () => {
