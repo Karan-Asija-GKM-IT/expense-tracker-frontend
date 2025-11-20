@@ -151,6 +151,7 @@ const LoginPage = ({ setUser, setCurrentPage }) => {
     </div>
   );
 };
+
 export default LoginPage;
 
 export const register = async (req, res) => {
