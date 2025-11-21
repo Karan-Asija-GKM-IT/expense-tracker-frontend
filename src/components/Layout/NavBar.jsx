@@ -9,6 +9,7 @@ const NavBar = ({ user, setUser, currentPage, setCurrentPage, setTransactions })
 
       
       await api.post('auth/logout');
+      localStorage.clear('accessToken')
 
     } catch (err) {
       console.error('Logout failed:', err);
