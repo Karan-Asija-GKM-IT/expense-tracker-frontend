@@ -40,6 +40,7 @@ const LoginPage = ({ setUser, setCurrentPage }) => {
       } else {
         response = await axios.post(`${API_URL}/auth/register`, { username, email, password }, { withCredentials: true });
         const token = response.data?.token;
+        localStorage.clear('accessToken');
         localStorage.setItem('accessToken', token);
       }
       
